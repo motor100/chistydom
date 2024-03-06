@@ -42,6 +42,7 @@
 	},
 	"dependencies": {
 		"air-datepicker": "^3.3.5",
+		"image-compare-viewer": "^1.6.2",
 		"imask": "^6.4.3",
 		"photoswipe": "^5.3.5",
 		"swiper": "^9.0.3"
