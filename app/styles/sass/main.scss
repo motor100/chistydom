@@ -73,8 +73,10 @@ ul {
   margin: 0 0 120px 0;
 }
 .section-title {
-  font-size: 32px;
-  sup {
+  margin: 0 0 30px 0;
+  font-family: 'interdisplay-medium';
+  font-size: 56px;
+  .sup {
     font-size: .5em;
     line-height: 1;
   }
@@ -110,13 +112,16 @@ ul {
     display: block;
     height: 60px;
     border-radius: 10px;
+    font-family: 'interdisplay-medium';
     color: #fff;
   }
   .try-it-free-btn {
     right: 195px;
     width: 260px;
+    padding: 0;
     border: none;
     background-color: $greencolor;
+    font-size: inherit;
   }
   .services-btn {
     right: 40px;
