@@ -168,6 +168,57 @@ ul {
   }
 }
 
+.services-section {
+  .item {
+    margin: 0 0 30px 0;
+  }
+  .horizontal-line {
+    height: 1px;
+    margin: 0 0 30px 0;
+    background-color: $secondcolor;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .title {
+    width: 40%;
+    font-family: 'interdisplay-medium';
+    font-size: 26px;
+  }
+  .list {
+    width: 45%;
+    padding: 8px 0 0 0;
+    font-family: 'interdisplay-light';
+    font-size: 18px;
+  }
+  .list-item {
+    margin: 0 0 20px 0;
+  }
+  .list-item-last {
+    margin: 0 0 46px 0;
+  }
+  .price {
+    width: 15%;
+    font-family: 'interdisplay-medium';
+    font-size: 26px;
+    color: $bluecolor;
+    text-align: right;
+    .sup {
+      font-size: .5em;
+      line-height: 1;
+    }
+  }
+  .details {
+    display: flex;
+    align-items: center;
+  }
+  .details-text {
+    margin: 0 16px 0 0;
+    font-family: 'interdisplay-medium';
+    font-size: 18px;
+    color: $greencolor;
+  }
+}
 
 // footer
 .footer {
