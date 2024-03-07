@@ -76,6 +76,7 @@ ul {
   margin: 0 0 30px 0;
   font-family: 'interdisplay-medium';
   font-size: 56px;
+  line-height: 1.1;
   .sup {
     font-size: .5em;
     line-height: 1;
@@ -123,7 +124,7 @@ ul {
 
 .main-section {
   .main-section-subtitle {
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
   }
   .main-image-wrapper {
     position: relative;
@@ -155,6 +156,7 @@ ul {
     border: none;
     background-color: $greencolor;
     font-size: inherit;
+    cursor: pointer;
   }
   .services-btn {
     right: 40px;
