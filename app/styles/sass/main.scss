@@ -85,7 +85,40 @@ ul {
 
 // header
 .header {
-
+  padding: 20px 0 60px 0;
+  .logo-link {
+    display: block;
+    width: 140px;
+    height: 53px;
+  }
+  .logo img {
+    width: 140px;
+    height: 53px;
+  }
+  .contacts {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .messenger {
+    width: 21px;
+    height: 21px;
+  }
+  .messenger img {
+    width: 100%;
+  }
+  .messenger-link {
+    display: block;
+    width: 21px;
+    height: 21px;
+  }
+  .messenger-right {
+    margin: 0 15px 0 8px;
+  }
+  .header-phone {
+    color: $bluecolor;
+  }
 }
 
 .main-section {
