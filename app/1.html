@@ -179,7 +179,7 @@
     </div>
   </div>
 
-  <div class="where-we-work-section section">
+  <div class="where-we-work-section">
     <div class="container">
       <div class="section-title"><span class="bluecolor">Где мы наводим чистоту</span></div>
       <div class="places">
@@ -264,7 +264,28 @@
           <img src="/images/uborka-ofisov/what-is-included-bg.jpg" alt="">
         </div>
       </div>
-      <div class="form"></div>
+      <div class="callback-form">
+        <div class="flex-container">
+          <div class="title-wrapper">
+            <div class="callback-form__title">Не верите?</div>
+            <div class="callback-form__description">напишите нам сейчас и мы сделаем вам <br>бесплатную чистку помещения 10м<sup class="sup">2</sup></div>
+          </div>
+          <form class="form">
+            <div class="form-group">
+              <input type="text" name="name" class="input-field input-name" placeholder="Введите ваше имя">
+              <input type="text" name="phone" class="input-field input-phone" placeholder="+7 (999) 999-99-99">
+              <button type="button" id="wsn-submit-btn" class="submit-btn">Оставить заявку</button>
+            </div>
+            <div class="agreement-text">
+              <input type="checkbox" name="checkbox" id="contacts-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#wsn-submit-btn').disabled = !this.checked;">
+              <label for="contacts-feedback-checkbox" class="custom-checkbox-label"></label>
+              <span class="custom-checkbox-text">Согласен с политикой обработки
+                <a href="/privacy-policy" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
