@@ -533,6 +533,36 @@ ul {
   
 }
 
+.info-section {
+  .subtitle {
+    font-family: 'interdisplay-medium';
+    font-size: 26px;
+  }
+  .image {
+    height: 430px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-section {
+  .item {
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 // footer
 .footer {
   background-color: $beigecolor;
