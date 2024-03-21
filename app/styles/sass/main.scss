@@ -563,6 +563,93 @@ ul {
   }
 }
 
+.testimonials-section {
+  .section-title-wrapper {
+    display: flex;
+    margin: 0 0 30px 0;
+    justify-content: space-between;
+  }
+  .section-title {
+    margin: 0;
+  }
+  .item {
+    height: 230px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #f7faf2;
+    .title {
+      margin: 0 0 30px 0;
+      font-family: 'interdisplay-medium';
+      font-size: 20px;
+      color: $greencolor;
+    }
+  }
+  .slider-navigation {
+    display: flex;
+    align-items: center;
+    .swiper-button-prev {
+      margin: 0 20px 0 0;
+    }
+    .circle {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border: 2px solid $greencolor;
+      border-radius: 24px;
+    }
+    .right {
+      position: absolute;
+      top: 20px;
+      left: 11px;
+      width: 20px;
+      height: 2px;
+      background-color: $greencolor;
+    }
+    .right::before,
+    .right::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      width: 2px;
+      height: 10px;
+      background-color: $greencolor;
+    }
+    .right::before {
+      top: -7px;
+      transform: rotate(-45deg);
+    }
+    .right::after {
+      top: -1px;
+      transform: rotate(45deg);
+    }
+    .left {
+      position: absolute;
+      top: 20px;
+      left: 11px;
+      width: 20px;
+      height: 2px;
+      background-color: $greencolor;
+    }
+    .left::before,
+    .left::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      width: 2px;
+      height: 10px;
+      background-color: $greencolor;
+    }
+    .left::before {
+      top: -7px;
+      transform: rotate(45deg);
+    }
+    .left::after {
+      top: -1px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 // footer
 .footer {
   background-color: $beigecolor;
