@@ -809,9 +809,111 @@ ul {
 
 // footer
 .footer {
+  padding: 80px 0 40px 0;
   background-color: $beigecolor;
-  .privacy-policy {
-    text-decoration: underline;
+  .footer-top {
+    margin: 0 0 30px 0;
+    .footer-logo {
+      width: 140px;
+      margin: 0 0 30px 0;
+    }
+    .logo img {
+      width: 100%;
+    }
+    .underlogo-text {
+      margin: 0 0 60px 0;
+      font-size: 14px;
+      color: #AAAAAA;
+    }
+    .contact-us {
+      margin: 0 0 16px 0;
+    }
+    .messenger {
+      display: flex;
+    }
+    .messenger-icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 10px 0 0;
+    }
+    .messenger-title {
+      font-size: 12px;
+      line-height: 1.2;
+      color: $greencolor;
+    }
+    .messenger-phone {
+      font-size: 12px;
+    }
+    .whatsapp {
+      margin: 0 0 16px 0;
+    }
+    .footer-nav__title {
+      margin: 0 0 30px 0;
+      color: $bluecolor;
+    }
+    .footer-nav-item {
+      margin: 0 0 10px 0;
+    }
+    .footer-nav-item__link {
+      color: $textcolor;
+      transition: color .3s;
+    }
+    .footer-nav-item__link:hover {
+      color: $greencolor;
+    }
+    .footer-nav-right {
+      margin: 0 0 26px 0;
+    }
+    .free-call {
+      margin: 0 0 8px 0;
+    }
+    .free-call-text {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+    }
+    .free-call-phone {
+      font-family: 'interdisplay-medium';
+      font-size: 20px;
+      color: $greencolor;
+    }
+    .email {
+      margin: 0 0 22px 0;
+      font-size: 12px;
+      color: #AAAAAA;
+    }
+    .contact-us-btn {
+      display: block;
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: $greencolor;
+      font-family: 'interdisplay-medium';
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .footer-bottom {
+    .privacy-policy {
+      color: $bluecolor;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .author {
+      margin: 0 0 5px 0;
+    }
+    .author a {
+      color: $textcolor;
+      text-align: right;
+      transition: color .3s;
+    }
+    .author a:hover {
+      color: $greencolor;
+    }
+    .copyright,
+    .inn {
+      margin: 0 0 5px 0;
+    }
   }
 }
 
@@ -849,7 +951,30 @@ ul {
   }
 }
 
-
+.we-use-cookie {
+  position: fixed;
+  right: 25px;
+  bottom: 47px;
+  left: 0;
+  max-width: 756px;
+  margin: 0 auto;
+  z-index: 10;
+  .we-use-cookie-wrapper {
+    display: flex;
+    max-width: 756px;
+    padding: 34px;
+    border: 1px solid $greencolor;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    align-items: center;
+  }
+  .we-use-cookie-text {
+    font-size: 14px;
+  }
+  .we-use-cookie-close {
+    display: block;
+  }
+}
 
 
 // mobile menu 
