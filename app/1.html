@@ -420,7 +420,34 @@
 
   <div class="callback-form-section section">
     <div class="container">
-      готовы оставить заявку?
+      <div class="callback-form">
+        <div class="callback-form__title">Готовы оставить заявку?</div>
+        <div class="discount-text">Мы даём скидку 10% на первый заказ</div>
+        <form class="form">
+          <div class="flex-container">
+            <div class="form-group form-group-type">
+              <label for="callback-form-type" class="label">тип уборки</label>
+              <input type="text" name="type" id="callback-form-type" class="input-field input-type" required placeholder="генеральная уборка офиса Комплекс А">
+            </div>
+            <div class="form-group form-group-area">
+              <label for="callback-form-area" class="label">метраж помещения</label>
+              <input type="text" name="type" id="callback-form-area" class="input-field" required placeholder="введите площадь">
+            </div>
+            <div class="form-group form-group-phone">
+              <label for="callback-form-phone" class="label">телефон</label>
+              <input type="text" name="type" id="callback-form-phone" class="input-field" required placeholder="+7 (999) 999-99-99">
+            </div>
+            <button type="button" id="cbf-submit-btn" class="submit-btn">Оставить заявку</button>
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox" id="contacts-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#cbf-submit-btn').disabled = !this.checked;">
+            <label for="contacts-feedback-checkbox" class="custom-checkbox-label"></label>
+            <span class="custom-checkbox-text">Согласен с политикой обработки
+              <a href="/privacy-policy" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
+            </span>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
