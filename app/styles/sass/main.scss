@@ -86,6 +86,10 @@ ul {
   }
 }
 
+.what-is-included-section-bg {
+  padding: 0 0 60px 0;
+  background-color: #fafafa;
+}
 
 
 // header
@@ -247,8 +251,8 @@ ul {
     font-size: inherit;
     color: #fff;
   }
-  .portfolio-row {
-    margin: 0 0 60px 0;
+  .portfolio-compare .portfolio-row {
+    margin-bottom: 60px;
   }
   .item {
     height: 460px;
@@ -260,6 +264,14 @@ ul {
   }
   .icv__img-a {
     height: 100%;
+  }
+  .portfolio-images .item {
+    margin: 0 0 24px 0;
+  }
+  .portfolio-images .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -274,11 +286,17 @@ ul {
     border-radius: 15px;
     background-color: #f7faf2;
   }
-  .item-text {
+  .advantages-with-description .item {
+    min-height: 289px;
+  }
+  .title {
     font-family: 'interdisplay-medium';
     font-size: 24px;
     color: $greencolor;
     line-height: 1.3;
+  }
+  .advantages-with-description .title {
+    margin: 0 0 30px 0;
   }
   .advantages-row .item {
     width: 49%;
@@ -292,9 +310,15 @@ ul {
   }
   .right-form {
     height: 100%;
-    padding: 34px 40px 30px 40px;
     border-radius: 15px;
     background-color: $greencolor;
+  }
+  .advantages-title-only .right-form {
+    padding: 34px 40px 30px 40px;
+  }
+  .advantages-with-description .right-form {
+    min-height: 289px;
+    padding: 24px 40px 30px 40px;
   }
   .right-form__title {
     margin: 0 0 30px 0;
@@ -306,12 +330,6 @@ ul {
   .form-group {
     display: flex;
     justify-content: space-between;
-  }
-  .form-group-first {
-    margin: 0 0 30px 0;
-  }
-  .form-group-second {
-    margin: 0 0 20px 0;
   }
   .input-field {
     display: block;
@@ -326,9 +344,17 @@ ul {
   .input-field::placeholder {
     color: #aaaaaa;
   }
+  .advantages-title-only .form-group-first {
+    margin: 0 0 30px 0;
+  }
+  .advantages-title-only .form-group-second {
+    margin: 0 0 20px 0;
+  }
+  .advantages-with-description .form-group-first {
+    margin: 0 0 16px 0;
+  }
   .submit-btn {
     display: block;
-    width: 100%;
     height: 61px;
     padding: 0;
     background-color: $bluecolor;
@@ -337,6 +363,12 @@ ul {
     font-family: 'interdisplay-medium';
     font-size: inherit;
     color: #fff;
+  }
+  .advantages-title-only .submit-btn {
+    width: 100%;
+  }
+  .advantages-with-description .submit-btn {
+    width: 48%;
   }
 }
 
@@ -374,9 +406,7 @@ ul {
 }
 
 .what-is-included-section {
-  padding: 0 0 60px 0;
   border-radius: 0 0 15px 15px;
-  background-color: #fafafa;
   .details {
     position: relative;
     height: 580px;
@@ -554,6 +584,9 @@ ul {
 }
 
 .video-section {
+  .videos {
+    margin: 0 0 30px 0;
+  }
   .item {
     height: 250px;
     border-radius: 15px;
@@ -563,6 +596,18 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .view-more-btn {
+    width: 196px;
+    height: 61px;
+    margin: 0 auto;
+    padding: 18px 0;
+    border-radius: 10px;
+    background-color: $greencolor;
+    font-family: 'interdisplay-medium';
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
   }
 }
 
@@ -829,6 +874,17 @@ ul {
     margin: 0 0 0 auto;
   }
 
+}
+
+.our-clients-section {
+  .logo {
+    height: 125px;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 // footer
