@@ -449,6 +449,10 @@ ul {
     top: 380px;
     left: 100px;
   }
+  .facade {
+    top: 300px;
+    left: 250px;
+  }
   .item .plus {
     position: absolute;
     width: 38px;
@@ -489,7 +493,7 @@ ul {
   .item.active .content {
     display: block;
   }
-  .floor .content {
+  .content-right .content {
     top: 0;
     left: 50px;
   }
