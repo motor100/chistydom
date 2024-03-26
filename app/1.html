@@ -148,7 +148,7 @@
           </div>
           <div class="right-form">
             <div class="right-form__title">Не верите, напишите нам сейчас и мы сделаем вам бесплатную чистку помещения 10м<sup class="sup">2</sup></div>
-            <div class="form">
+            <form class="form">
               <div class="form-group form-group-first">
                 <input type="text" name="name" class="input-field" placeholder="Введите ваше имя" required>
                 <input type="text" name="phone" class="input-field" placeholder="Введите ваш номер телефона" required>
@@ -157,8 +157,15 @@
                 <input type="email" name="email" class="input-field" placeholder="Введите ваше email" required>
                 <input type="text" name="phone" class="input-field" placeholder="Площадь помещения" required>
               </div>
-              <button type="button" class="submit-btn">Попробовать бесплатно</button>
-            </div>
+              <button type="button" id="arf-submit-btn" class="submit-btn">Попробовать бесплатно</button>
+              <div class="agreement-text">
+                <input type="checkbox" name="checkbox" id="arf-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#arf-submit-btn').disabled = !this.checked;">
+                <label for="arf-feedback-checkbox" class="custom-checkbox-label"></label>
+                <span class="custom-checkbox-text">Согласен с политикой обработки
+                  <a href="#" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
+                </span>
+              </div>              
+            </form>
           </div>
         </div>
       </div>
@@ -174,32 +181,36 @@
             <div class="item">
               <div class="item-text">Офис и бизнес-центр</div>
               <div class="item-image">
-                <img src="/images/uborka-ofisov/where-we-work-office.png" alt="">
+                <img src="/images/uborka-ofisov/where-we-work-office.jpg" alt="">
               </div>
+              <div class="item-gradient"></div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="item">
               <div class="item-text">Торговый центр, магазин, склад</div>
               <div class="item-image">
-                <img src="/images/uborka-ofisov/where-we-work-mall.png" alt="">
+                <img src="/images/uborka-ofisov/where-we-work-mall.jpg" alt="">
               </div>
+              <div class="item-gradient"></div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="item">
               <div class="item-text">Кафе и рестораны</div>
               <div class="item-image">
-                <img src="/images/uborka-ofisov/where-we-work-restaurant.png" alt="">
+                <img src="/images/uborka-ofisov/where-we-work-restaurant.jpg" alt="">
               </div>
+              <div class="item-gradient"></div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="item">
               <div class="item-text">Государственные учреждения</div>
               <div class="item-image">
-                <img src="/images/uborka-ofisov/where-we-work-federal.png" alt="">
+                <img src="/images/uborka-ofisov/where-we-work-federal.jpg" alt="">
               </div>
+              <div class="item-gradient"></div>
             </div>
           </div>
         </div>
@@ -263,10 +274,10 @@
               <button type="button" id="wsn-submit-btn" class="submit-btn">Оставить заявку</button>
             </div>
             <div class="agreement-text">
-              <input type="checkbox" name="checkbox" id="contacts-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#wsn-submit-btn').disabled = !this.checked;">
-              <label for="contacts-feedback-checkbox" class="custom-checkbox-label"></label>
+              <input type="checkbox" name="checkbox" id="wsn-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#wsn-submit-btn').disabled = !this.checked;">
+              <label for="wsn-feedback-checkbox" class="custom-checkbox-label"></label>
               <span class="custom-checkbox-text">Согласен с политикой обработки
-                <a href="/privacy-policy" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
+                <a href="#" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
               </span>
             </div>
           </form>
@@ -474,10 +485,10 @@
             <button type="button" id="cbf-submit-btn" class="submit-btn">Оставить заявку</button>
           </div>
           <div class="agreement-text">
-            <input type="checkbox" name="checkbox" id="contacts-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#cbf-submit-btn').disabled = !this.checked;">
-            <label for="contacts-feedback-checkbox" class="custom-checkbox-label"></label>
+            <input type="checkbox" name="checkbox" id="cbf-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#cbf-submit-btn').disabled = !this.checked;">
+            <label for="cbf-feedback-checkbox" class="custom-checkbox-label"></label>
             <span class="custom-checkbox-text">Согласен с политикой обработки
-              <a href="/privacy-policy" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
+              <a href="#" rel="nofollow" target="_blank" class="custom-checkbox-link"> персональных данных</a>
             </span>
           </div>
         </form>

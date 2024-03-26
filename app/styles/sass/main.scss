@@ -111,21 +111,22 @@ ul {
     align-items: center;
   }
   .messenger {
-    width: 21px;
-    height: 21px;
+    width: 23px;
+    height: 23px;
   }
   .messenger img {
     width: 100%;
   }
   .messenger-link {
     display: block;
-    width: 21px;
-    height: 21px;
+    width: 23px;
+    height: 23px;
   }
   .messenger-right {
-    margin: 0 15px 0 8px;
+    margin: 0 15px 0 10px;
   }
   .header-phone {
+    font-size: 18px;
     color: $bluecolor;
   }
 }
@@ -166,6 +167,10 @@ ul {
     background-color: $greencolor;
     font-size: 16px;
     text-align: center;
+    transition: background-color .3s;
+  }
+  .try-it-free-btn:hover {
+    background-color: #508002;
   }
   .services-btn {
     right: 40px;
@@ -245,11 +250,16 @@ ul {
     display: block;
     width: 240px;
     height: 61px;
+    padding: 0;
     border: none;
     border-radius: 10px;
     background-color: $greencolor;
     font-size: inherit;
     color: #fff;
+    transition: background-color .3s;
+  }
+  .see-all-btn:hover {
+    background-color: #508002;
   }
   .portfolio-compare .portfolio-row {
     margin-bottom: 60px;
@@ -314,18 +324,18 @@ ul {
     background-color: $greencolor;
   }
   .advantages-title-only .right-form {
-    padding: 34px 40px 30px 40px;
+    padding: 25px 40px 30px 40px;
   }
   .advantages-with-description .right-form {
     min-height: 289px;
     padding: 24px 40px 30px 40px;
   }
   .right-form__title {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     font-family: 'interdisplay-medium';
     font-size: 24px;
     color: #fff;
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .form-group {
     display: flex;
@@ -345,7 +355,7 @@ ul {
     color: #aaaaaa;
   }
   .advantages-title-only .form-group-first {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
   }
   .advantages-title-only .form-group-second {
     margin: 0 0 20px 0;
@@ -356,6 +366,7 @@ ul {
   .submit-btn {
     display: block;
     height: 61px;
+    margin: 0 0 14px 0;
     padding: 0;
     background-color: $bluecolor;
     border: none;
@@ -363,6 +374,9 @@ ul {
     font-family: 'interdisplay-medium';
     font-size: inherit;
     color: #fff;
+  }
+  .submit-btn:disabled {
+    background-color: #AAAAAA;
   }
   .advantages-title-only .submit-btn {
     width: 100%;
@@ -388,7 +402,7 @@ ul {
     font-family: 'interdisplay-medium';
     font-size: 26px;
     color: #fff;
-    z-index: 1;
+    z-index: 2;
   }
   .item-image {
     position: absolute;
@@ -397,6 +411,15 @@ ul {
     width: 100%;
     height: 100%;
     z-index: 0;
+  }
+  .item-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #66A300 0%, transparent 130%);
+    z-index: 1;
   }
   .item-image img {
     width: 100%;
@@ -565,7 +588,9 @@ ul {
       font-size: inherit;
       color: #fff;
     }
-
+    .submit-btn:disabled {
+      background-color: #AAAAAA;
+    }
   }
   
 }
@@ -612,6 +637,10 @@ ul {
     color: #fff;
     text-align: center;
     cursor: pointer;
+    transition: background-color .3s;
+  }
+  .view-more-btn:hover {
+    background-color: #508002;
   }
 }
 
@@ -777,6 +806,10 @@ ul {
     font-size: 16px;
     color: #fff;
     text-align: center;
+    transition: background-color .3s;
+  }
+  .feedback-btn:hover {
+    background-color: #508002;
   }
   .subtitle {
     margin: 0 0 38px 0;
@@ -823,7 +856,6 @@ ul {
     transform: rotate(0deg);
   }
   .title-text {
-    font-family: 'interdisplay-medium';
     font-size: 20px;
   }
   .content {
@@ -896,6 +928,9 @@ ul {
     font-size: inherit;
     color: #fff;
   }
+  .submit-btn:disabled {
+    background-color: #AAAAAA;
+  }
   .form-group-type {
     width: 34%;
   }
@@ -912,7 +947,6 @@ ul {
     width: 28%;
     margin: 0 0 0 auto;
   }
-
 }
 
 .our-clients-section {
@@ -951,17 +985,20 @@ ul {
       display: flex;
     }
     .messenger-icon {
-      width: 32px;
-      height: 32px;
+      width: 39px;
+      height: 39px;
       margin: 0 10px 0 0;
     }
+    .messenger-icon img {
+      width: 100%;
+    }
     .messenger-title {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.2;
       color: $greencolor;
     }
     .messenger-phone {
-      font-size: 12px;
+      font-size: 16px;
     }
     .whatsapp {
       margin: 0 0 16px 0;
@@ -1036,10 +1073,10 @@ ul {
   }
 }
 
-
 // custom checkbox
 .agreement-text {
   display: flex;
+  align-items: center;
   .custom-checkbox {
     position: absolute;
     z-index: -1;
@@ -1047,18 +1084,18 @@ ul {
   }
   .custom-checkbox+.custom-checkbox-label {
     display: block;
-    width: 13px;
-    height: 13px;
-    border: 1px solid grey;
-    margin: 3px 10px 3px 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% 80%;
+    background-size: 100% 60%;
     background-color: #fff;
     flex-shrink: 0;
   }
   .custom-checkbox:checked+.custom-checkbox-label {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000b7f' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   }
   .custom-checkbox-text {
     font-size: 14px;
@@ -1069,9 +1106,6 @@ ul {
     text-decoration: underline;
   }
 }
-
-
-// background: linear-gradient(90deg, #66A300 0%, rgba(255, 255, 255, 0.00) 128.3%);
 
 // we use cookie
 .we-use-cookie {
@@ -1296,7 +1330,7 @@ ul {
   width: 3px;
   height: 20px;
   border-radius: 2px;
-  background-color: #a9a9a9;
+  background-color: #AAAAAA;
   transition: background-color .3s;
 }
 .modal-window .close:before {
@@ -1316,7 +1350,7 @@ ul {
   width: 100%;
   margin: 0 0 5px 0;
   font-size: 18px;
-  color: #A9A9A9;
+  color: #AAAAAA;
   text-transform: uppercase;
 }
 .modal-window .input-field {
@@ -1324,7 +1358,7 @@ ul {
   margin: 0 0 25px 0;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #A9A9A9;
+  border-bottom: 1px solid #AAAAAA;
   border-left: none;
   font-family: inherit;
   font-size: 18px;
@@ -1356,7 +1390,7 @@ ul {
   cursor: pointer;
 }
 .modal-window .submit-btn:disabled {
-  color: #A9A9A9;
+  color: #AAAAAA;
 }
 .modal-window .custom-checkbox {
   position: absolute;
@@ -1370,7 +1404,7 @@ ul {
   float: left;
   width: 18px;
   height: 18px;
-  border: 1px solid #a9a9a9;
+  border: 1px solid #AAAAAA;
   border-radius: 5px;
   margin: 3px 10px 10px 0;
   background-repeat: no-repeat;
