@@ -6,6 +6,10 @@ import Swiper, { Navigation } from 'swiper';
 import ImageCompare from "image-compare-viewer";
 
 
+const body = document.querySelector('body');
+
+
+
 // Image compare
 // https://image-compare-viewer.netlify.app/
 // https://github.com/kylewetton/image-compare-viewer
@@ -61,19 +65,37 @@ function checkCookies() {
 checkCookies();
 
 
-// Testimonials slider
-const testimonialsSlider = document.querySelector('.testimonials-slider')
+// Testimonials slider fullwidth
+const testimonialsSliderFullwidth = document.querySelector('.testimonials-slider-fullwidth');
 
-const slider = new Swiper('.testimonials-slider', {
-  modules: [Navigation],
-  slidesPerView: 2,
-  spaceBetween: 24,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+if (testimonialsSliderFullwidth) {
+  const sliderFullwidth = new Swiper('.testimonials-slider-fullwidth', {
+    modules: [Navigation],
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+
+
+// Testimonials slider halfwidth
+const testimonialsSliderHalfwidth = document.querySelector('.testimonials-slider-halfwidth');
+
+if (testimonialsSliderHalfwidth) {
+  const sliderHalfwidth = new Swiper('.testimonials-slider-halfwidth', {
+    modules: [Navigation],
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
 
 
 // FAQ accordeon
@@ -88,3 +110,30 @@ accordeonItems.forEach((item) => {
 });
 
 
+
+// Mobile menu
+const burgerMenuWrapper = document.querySelector('.burger-menu-wrapper');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menuClose = document.querySelector('.menu-close');
+const mobileMenuBackground = document.querySelector('.mobile-menu-background');
+
+function mobileMenuToggle() {
+  body.classList.toggle('overflow-hidden');
+  mobileMenu.classList.toggle('active');
+  mobileMenuBackground.classList.toggle('active');
+}
+
+menuClose.onclick = mobileMenuToggle;
+burgerMenuWrapper.onclick = mobileMenuToggle;
+
+let listClick = document.querySelectorAll('.mobile-menu li a');
+for (let i = 0; i < listClick.length; i++) {
+  listClick[i].onclick = function (event) {
+    event.preventDefault();
+    mobileMenu.classList.remove('active');
+    body.classList.remove('overflow-hidden');
+    let hrefClick = this.href;
+    setTimeout(function() {location.href = hrefClick}, 500);
+    // для wordpress 500ms, для php 1000ms (как длительность transition)
+  }
+}
