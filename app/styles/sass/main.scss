@@ -85,12 +85,10 @@ ul {
     line-height: 1;
   }
 }
-
 .what-is-included-section-bg {
   padding: 0 0 60px 0;
   background-color: #fafafa;
 }
-
 
 // header
 .header {
@@ -232,13 +230,21 @@ ul {
   }
   .details {
     display: flex;
+    width: 128px;
     align-items: center;
+    cursor: pointer;
   }
   .details-text {
     margin: 0 16px 0 0;
     font-family: 'interdisplay-medium';
     font-size: 18px;
     color: $greencolor;
+  }
+  .details .details-image {
+    transition: transform .3s;
+  }
+  .details:hover .details-image {
+    transform: rotate(90deg);
   }
 }
 
@@ -1069,6 +1075,7 @@ ul {
       color: $bluecolor;
       text-align: center;
       text-decoration: underline;
+      cursor: pointer;
     }
     .author {
       margin: 0 0 5px 0;
@@ -1113,12 +1120,13 @@ ul {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000b7f' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   }
   .custom-checkbox-text {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
   }
   .custom-checkbox-link {
     color: #fff;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -1296,164 +1304,168 @@ ul {
   top: 0;
   left: 0;
   z-index: 100;
-}
-.modal-window.active {
-  display: block;
-}
-.modal-window .modal-wrapper {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 5%;
-  padding: 0 12px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
-}
-.modal-window .modal-wrapper.active {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-window .modal-area {
-  position: relative;
-  max-width: 425px;
-  margin: 0 auto;
-  padding: 50px 64px 50px 64px;
-  border-radius: 15px;
-  background-color: #fff;
-  overflow: hidden;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
-}
-.modal-window .modal-close {
-  position: absolute;
-  top: 35px;
-  right: 28px;
-  cursor: pointer;
-}
-.modal-window .close {
-  position: relative;
-  width: 21px;
-  height: 21px;
-  border-radius: 3px;
-}
-.modal-window .close:before,
-.modal-window .close:after { 
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 9px;
-  width: 3px;
-  height: 20px;
-  border-radius: 2px;
-  background-color: #AAAAAA;
-  transition: background-color .3s;
-}
-.modal-window .close:before {
-  transform: rotate(45deg);
-}
-.modal-window .close:after {
-  transform: rotate(-45deg);
-}
-.modal-window .modal-title {
-  margin: 0 0 20px 0;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.modal-window .label {
-  display: block;
-  width: 100%;
-  margin: 0 0 5px 0;
-  font-size: 18px;
-  color: #AAAAAA;
-  text-transform: uppercase;
-}
-.modal-window .input-field {
-  width: 100%;
-  margin: 0 0 25px 0;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid #AAAAAA;
-  border-left: none;
-  font-family: inherit;
-  font-size: 18px;
-}
-.modal-window .first-input-field {
-  margin: 0 0 35px 0;
-}
-.modal-window .checkbox-text {
-  display: block;
-  margin: 0 0 30px 0;
-  font-size: 12px;
-  line-height: 1.4;
-}
-.modal-window .privacy-policy-btn {
-  color: #211F1F;
-  text-decoration: underline;
-}
-.modal-window .submit-btn {
-  display: block;
-  width: 100%;
-  height: 64px;
-  padding: 0;
-  border: none;
-  border-radius: 30px;
-  background-color: #211F1F;
-  font-size: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.modal-window .submit-btn:disabled {
-  color: #AAAAAA;
-}
-.modal-window .custom-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  display: block;
-}
-.modal-window .custom-checkbox + .custom-checkbox-label::before {
-  content: '';
-  display: block;
-  float: left;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #AAAAAA;
-  border-radius: 5px;
-  margin: 3px 10px 10px 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 70%;
-  background-color: #fff;
-  cursor: pointer;
-}
-.modal-window .custom-checkbox:checked + .custom-checkbox-label::before {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='211F1F' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-}
-.modal-window .custom-checkbox-label {
-  display: block;
-}
-
-
-// Privacy policy modal
-.modal-window .modal-wrapper {
-  height: 100%;
-}
-.privacy-policy-modal .modal-area {
-  max-width: 100%;
-  max-height: auto;
-  height: 90%;
-}
-.privacy-policy-modal .modal-title {
-  font-size: 20px;
-}
-.privacy-policy-modal .modal-content {
-  height: 80%;
-  padding: 0 30px 0 0;
-  overflow: auto;
+  &.active {
+    display: block;
+  }
+  .modal-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5%;
+    height: 100%;
+    padding: 0 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  .modal-wrapper.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-area {
+    position: relative;
+    // max-width: 425px;
+    height: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  .modal-close {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+    cursor: pointer;
+  }
+  .close {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    border-radius: 3px;
+  }
+  .close:before,
+  .close:after { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 3px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #AAAAAA;
+    transition: background-color .3s;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .modal-title {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .modal-content {
+    height: 86%;
+    overflow: auto;
+    padding: 0px 30px 0px 0px;
+  }
+  // .label {
+  //   display: block;
+  //   width: 100%;
+  //   margin: 0 0 5px 0;
+  //   font-size: 18px;
+  //   color: #AAAAAA;
+  //   text-transform: uppercase;
+  // }
+  // .input-field {
+  //   width: 100%;
+  //   margin: 0 0 25px 0;
+  //   border-top: none;
+  //   border-right: none;
+  //   border-bottom: 1px solid #AAAAAA;
+  //   border-left: none;
+  //   font-family: inherit;
+  //   font-size: 18px;
+  // }
+  // .first-input-field {
+  //   margin: 0 0 35px 0;
+  // }
+  // .checkbox-text {
+  //   display: block;
+  //   margin: 0 0 30px 0;
+  //   font-size: 12px;
+  //   line-height: 1.4;
+  // }
+  // .privacy-policy-btn {
+  //   color: #211F1F;
+  //   text-decoration: underline;
+  // }
+  // .submit-btn {
+  //   display: block;
+  //   width: 100%;
+  //   height: 64px;
+  //   padding: 0;
+  //   border: none;
+  //   border-radius: 30px;
+  //   background-color: #211F1F;
+  //   font-size: 20px;
+  //   color: #fff;
+  //   text-transform: uppercase;
+  //   cursor: pointer;
+  // }
+  // .submit-btn:disabled {
+  //   color: #AAAAAA;
+  // }
+  // .custom-checkbox {
+  //   position: absolute;
+  //   z-index: -1;
+  //   opacity: 0;
+  //   display: block;
+  // }
+  // .custom-checkbox + .custom-checkbox-label::before {
+  //   content: '';
+  //   display: block;
+  //   float: left;
+  //   width: 18px;
+  //   height: 18px;
+  //   border: 1px solid #AAAAAA;
+  //   border-radius: 5px;
+  //   margin: 3px 10px 10px 0;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: 100% 70%;
+  //   background-color: #fff;
+  //   cursor: pointer;
+  // }
+  // .custom-checkbox:checked + .custom-checkbox-label::before {
+  //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='211F1F' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  // }
+  // .custom-checkbox-label {
+  //   display: block;
+  // }
 }
 
+// privacy policy modal
+.privacy-policy-modal {
+  .privacy-policy-modal .modal-area {
+    max-width: 100%;
+    max-height: auto;
+    height: 90%;
+  }
+  .privacy-policy-modal .modal-title {
+    font-size: 20px;
+  }
+  .privacy-policy-modal .modal-content {
+    height: 80%;
+    padding: 0 30px 0 0;
+    overflow: auto;
+  }
+}
 
 @media only screen and (max-width : 1400px) {
   .section {

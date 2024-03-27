@@ -137,3 +137,68 @@ for (let i = 0; i < listClick.length; i++) {
     // для wordpress 500ms, для php 1000ms (как длительность transition)
   }
 }
+
+
+// Окна
+// const callbackBtn = document.querySelectorAll('.js-callback-btn');
+// const mobileMenuCallbackBtn = document.querySelector('.mobile-menu-callback-btn');
+// const callbackModal = document.querySelector('#callback-modal');
+
+
+const detailsBtns = document.querySelectorAll('.js-details-btn');
+const detailsModal = document.querySelectorAll('.details-modal');
+const privacyPolicyBtns = document.querySelectorAll('.privacy-policy-btn');
+const privacyPolicyModal = document.querySelector('#privacy-policy-modal');
+const modalWindow = document.querySelectorAll('.modal-window');
+const modalCloseBtns = document.querySelectorAll('.modal-window .modal-close');
+
+function modalOpen(win) {
+  body.classList.add('overflow-hidden');
+  win.style.display = "block";
+  win.childNodes[1].classList.add('active')
+}
+
+function modalClose(win) {
+  body.classList.remove('overflow-hidden');
+  win.style.display = "";
+  win.childNodes[1].classList.remove('active');
+}
+
+// Открытие окон подробнее
+for (let i = 0; i < detailsBtns.length; i++) {
+  detailsBtns[i].onclick = function() {
+    modalOpen(detailsModal[i]);
+  }
+}
+
+// Открытие окна политики
+for (let i = 0; i < privacyPolicyBtns.length; i++) {
+  privacyPolicyBtns[i].onclick = function() {
+    modalOpen(privacyPolicyModal);
+  }
+}
+
+// mobileMenuCallbackBtn.onclick = function() {
+//   closeMenu();
+//   modalOpen(callbackModal);
+// }
+
+// Закрытие окон
+for (let i = 0; i < modalCloseBtns.length; i++) {
+  modalCloseBtns[i].onclick = function() {
+    modalClose(modalWindow[i]);
+  }
+}
+
+for (let i = 0; i < modalWindow.length; i++) {
+  modalWindow[i].onclick = function(event) {
+    let classList = event.target.classList;
+    for (let j = 0; j < classList.length; j++) {
+      if (classList[j] == "modal-window" || classList[j] == "modal-wrapper") {
+        modalClose(modalWindow[i])
+      }
+    }
+  }
+}
+
+

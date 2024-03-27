@@ -95,7 +95,7 @@
             <div class="inn">ИНН 7415079530</div>
           </div>
           <div class="col-xxl-7 col-md-6">
-            <div class="privacy-policy">Политика обработки персональных данных</div>
+            <div class="privacy-policy privacy-policy-btn">Политика обработки персональных данных</div>
           </div>
           <div class="col-xxl-2 col-md-3">
             <div class="developer">
@@ -161,28 +161,46 @@
   </div>
 
   <div class="mobile-menu-background"></div>
-  
-  <!-- feedback-modal -->
-  <div id="callback-modal" class="modal-window callback-modal">
+
+  <!-- details-modal -->
+  <div class="modal-window details-modal">
     <div class="modal-wrapper">
       <div class="modal-area">
         <div class="modal-close">
           <div class="close"></div>
         </div>
-        <div class="modal-title">Заполните форму</div>
-        <form id="callback-modal-form" class="form" method="post">
-          <label for="callback-name" class="label">Ваше имя</label>
-          <input type="text" id="callback-name" class="name input-field first-input-field" name="name" minlength="3" maxlength="20" required>
-          <label for="callback-phone" class="label">Ваш телефон</label>
-          <input type="text" id="callback-phone" class="phone input-field" name="phone" required minlength="3" maxlength="30">
-          <input type="hidden" id="modal-start-date" name="start-date" value="">
-          <input type="hidden" id="modal-guest" name="guest" value="">
-          <input type="checkbox" name="checkbox" class="custom-checkbox" id="checkbox-callback-modal" checked required onchange="document.querySelector('.js-callback-modal-btn').disabled = !this.checked;">
-          <label for="checkbox-callback-modal" class="custom-checkbox-label"></label>
-          <span class="checkbox-text">
-            Согласен с <span class="privacy-policy-btn" target="_blank">политикой обработки персональных данных</span></span>
-          <input type="button" class="submit-btn js-callback-modal-btn" value="Отправить">
-        </form>
+        <div class="modal-title">Подробнее 1</div>
+        <div class="modal-content">
+          текст подробнее 1
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-window details-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+        <div class="modal-title">Подробнее 2</div>
+        <div class="modal-content">
+          текст подробнее 2
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-window details-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+        <div class="modal-title">Подробнее 3</div>
+        <div class="modal-content">
+          текст подробнее 3
+        </div>
       </div>
     </div>
   </div>
