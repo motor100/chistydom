@@ -10,7 +10,9 @@
             <div class="contact-us">Напишите нам</div>
             <div class="messenger whatsapp">
               <div class="messenger-icon">
-                <img src="/images/uborka-ofisov/footer-whatsapp-icon.svg" alt="">
+                <a href="https://wa.me/79049429620" class="messenger-link" target="_blank">
+                  <img src="/images/uborka-ofisov/footer-whatsapp-icon.svg" alt="">
+                </a>
               </div>
               <div class="messenger-content">
                 <div class="messenger-title">WhatsApp</div>
@@ -19,7 +21,9 @@
             </div>
             <div class="messenger telegram">
               <div class="messenger-icon">
-                <img src="/images/uborka-ofisov/footer-telegram-icon.svg" alt="">
+                <a href="https://t.me/+79049429620" class="messenger-link" target="_blank">
+                  <img src="/images/uborka-ofisov/footer-telegram-icon.svg" alt="">
+                </a>
               </div>
               <div class="messenger-content">
                 <div class="messenger-title">Telegram</div>
@@ -51,13 +55,13 @@
             <div class="footer-nav">
               <div class="footer-nav__title">Клиентам</div>
               <div class="footer-nav-item">
-                <a href="#" class="footer-nav-item__link">Оплата</a>
+                <span id="payment-btn" class="footer-nav-item__link">Оплата</span>
               </div>
               <div class="footer-nav-item">
                 <a href="#" class="footer-nav-item__link">Вопрос/ответ</a>
               </div>
               <div class="footer-nav-item">
-                <a href="#" class="footer-nav-item__link">Отзывы</a>
+                <a href="https://www.uborkamiass.ru/reviews" class="footer-nav-item__link" target="_blank">Отзывы</a>
               </div>
             </div>
           </div>
@@ -71,7 +75,7 @@
                 <a href="#" class="footer-nav-item__link">Наши преимущества</a>
               </div>
               <div class="footer-nav-item">
-                <a href="#" class="footer-nav-item__link">Сотрудничество</a>
+                <span id="partnership-btn" class="footer-nav-item__link">Сотрудничество</span>
               </div>
               <div class="footer-nav-item">
                 <a href="#" class="footer-nav-item__link">Контакты</a>
@@ -124,7 +128,7 @@
   <!-- mobile menu -->
   <div class="burger-menu-wrapper hidden-desktop">
     <div class="burger-menu">
-      <span></span>
+      <span class="span"></span>
     </div>
   </div>
   <div class="mobile-menu hidden-desktop">
@@ -142,21 +146,20 @@
         <a href="#contacts">Контакты</a>
       </li>
     </ul>
-    <div class="phone">
-      <a href="tel:+78002507505" class="phone-link">8 800 250 75 05</a>
-      <span class="phone-text"> — бронирование</span>
-    </div>
-    <div class="phone last-contacts-item">
-      <a href="tel:+79617964972" class="phone-link">+7 (961) 796 49 72</a>
-      <span class="phone-text"> — администратор</span>
-    </div>
-    <div class="social-icons">
-      <!-- <a href="viber://chat?number=%2B79617964972" class="social-icon-link" target="_blank">
-        <img src="images/viber-icon.png" class="social-icon-image" alt="">
-      </a>
-      <a href="https://wa.me/79617964972" class="social-icon-link" target="_blank">
-        <img src="images/whatsapp-icon.png" class="social-icon-image" alt="">
-      </a> -->
+    <div class="header-contacts">
+      <div class="messenger">
+        <a href="https://wa.me/79049429620" class="messenger-link" target="_blank">
+          <img src="/images/whatsapp.svg" alt="">
+        </a>
+      </div>
+      <div class="messenger messenger-right">
+        <a href="https://t.me/+79049429620" class="messenger-link" target="_blank">
+          <img src="/images/telegram.svg" alt="">
+        </a>
+      </div>
+      <div class="phone">
+        <a href="tel:+79049429620" class="phone-link">+7 (904) 942-96-20</a>
+      </div>
     </div>
   </div>
 
@@ -236,6 +239,36 @@
           <p>При наличии учетной записи на сайте или если вы оставляли комментарии, то вы можете запросить файл экспорта персональных данных, которые мы сохранили о вас, включая предоставленные вами данные. Вы также можете запросить удаление этих данных, это не включает данные, которые мы обязаны хранить в административных целях, по закону или целях безопасности.</p>
           <p>Куда мы отправляем ваши данные</p>
           <p>Комментарии пользователей могут проверяться автоматическим сервисом определения спама</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- payment modal -->
+  <div id="payment-modal" class="modal-window payment-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+        <div class="modal-title">Оплата</div>
+        <div class="modal-content">
+          текст про варианты оплаты для ФЛ и ЮЛ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- partnership modal -->
+  <div id="partnership-modal" class="modal-window partnership-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+        <div class="modal-title">Партнерство</div>
+        <div class="modal-content">
+          текст про варианты партнерства
         </div>
       </div>
     </div>

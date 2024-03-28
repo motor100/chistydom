@@ -76,11 +76,7 @@
 
   <div class="portfolio-section section">
     <div class="container">
-      <div class="section-title-wrapper">
-        <div class="section-title"><span class="greencolor">Наши работы</span>, говорящие <span class="bluecolor">сами за себя</span></div>
-        <button class="see-all-btn">Смотреть все работы</button>
-      </div>
-      
+      <div class="section-title"><span class="greencolor">Наши работы</span>, говорящие <span class="bluecolor">сами за себя</span></div>
       <div class="portfolio portfolio-compare">
         <div class="row portfolio-row">
           <div class="col-md-4">
@@ -151,11 +147,11 @@
             <form class="form">
               <div class="form-group form-group-first">
                 <input type="text" name="name" class="input-field" placeholder="Введите ваше имя" required>
-                <input type="text" name="phone" class="input-field" placeholder="Введите ваш номер телефона" required>
+                <input type="text" name="phone" class="input-field js-input-phone-mask" placeholder="Введите ваш номер телефона" required>
               </div>
               <div class="form-group form-group-second">
                 <input type="email" name="email" class="input-field" placeholder="Введите ваше email" required>
-                <input type="text" name="phone" class="input-field" placeholder="Площадь помещения" required>
+                <input type="number" name="area" class="input-field" min="1" max="9999" placeholder="Площадь помещения" required>
               </div>
               <button type="button" id="arf-submit-btn" class="submit-btn">Попробовать бесплатно</button>
               <div class="agreement-text">
@@ -222,35 +218,35 @@
     <div class="container">
       <div class="section-title">Что входит <span class="greencolor">в уборку</span></div>
       <div class="details">
-        <div class="item ceiling">
+        <div class="item ceiling content-right">
           <div class="plus"></div>
           <div class="content">
             <div class="content-title">Очистка пола</div>
             <div class="content-text">Специалисты подбирают необходимое давление и температуру по каждому виду покрытия</div>
           </div>
         </div>
-        <div class="item column">
+        <div class="item column content-left">
           <div class="plus"></div>
           <div class="content">
             <div class="content-title">Очистка колонны</div>
             <div class="content-text">Специалисты подбирают необходимое давление и температуру по каждому виду покрытия</div>
           </div>
         </div>
-        <div class="item flower">
+        <div class="item flower content-bottom">
           <div class="plus"></div>
           <div class="content">
             <div class="content-title">Очистка цветка</div>
             <div class="content-text">Специалисты подбирают необходимое давление и температуру по каждому виду покрытия</div>
           </div>
         </div>
-        <div class="item chair">
+        <div class="item chair content-left-top">
           <div class="plus"></div>
           <div class="content">
-            <div class="content-title">Очистка стул</div>
+            <div class="content-title">Очистка стула</div>
             <div class="content-text">Специалисты подбирают необходимое давление и температуру по каждому виду покрытия</div>
           </div>
         </div>
-        <div class="item floor content-right active">
+        <div class="item floor content-right">
           <div class="plus"></div>
           <div class="content">
             <div class="content-title">Очистка пола</div>
@@ -270,7 +266,7 @@
           <form class="form">
             <div class="form-group">
               <input type="text" name="name" class="input-field input-name" placeholder="Введите ваше имя">
-              <input type="text" name="phone" class="input-field input-phone" placeholder="+7 (999) 999-99-99">
+              <input type="text" name="phone" class="input-field input-phone js-input-phone-mask" placeholder="+7 (999) 999-99-99">
               <button type="button" id="wsn-submit-btn" class="submit-btn">Оставить заявку</button>
             </div>
             <div class="agreement-text">
@@ -315,24 +311,34 @@
       <div class="section-title">Посмотрите как проходит <span class="greencolor">процесс работ</span></div>
       <div class="videos">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="item">
-              <img src="/images/uborka-ofisov/video.jpg" alt="">
+              <video src="/videos/uborka-ofisov/video_2024-03-14_14-48-33.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="item">
-              <img src="/images/uborka-ofisov/video.jpg" alt="">
+              <video src="/videos/uborka-ofisov/VID_20200903_142008.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="item">
-              <img src="/images/uborka-ofisov/video.jpg" alt="">
+              <video src="/videos/uborka-ofisov/VID_20201007_125645.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="item">
-              <img src="/images/uborka-ofisov/video.jpg" alt="">
+          <div class="col-md-4">
+            <div class="item hidden">
+              <video src="/videos/uborka-ofisov/VID_20201009_144747.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item hidden">
+              <video src="/videos/uborka-ofisov/VID_20201204_153640.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item hidden">
+              <video src="/videos/uborka-ofisov/VID_20200824_123800.mp4" poster="/videos/uborka-ofisov/video-cover.jpg" preload="metadata" controls></video>
             </div>
           </div>
         </div>
@@ -475,12 +481,12 @@
               <input type="text" name="type" id="callback-form-type" class="input-field input-type" required placeholder="генеральная уборка офиса Комплекс А">
             </div>
             <div class="form-group form-group-area">
-              <label for="callback-form-area" class="label">метраж помещения</label>
-              <input type="text" name="type" id="callback-form-area" class="input-field" required placeholder="введите площадь">
+              <label for="callback-form-area" class="label">площадь помещения</label>
+              <input type="number" name="area" id="callback-form-area" class="input-field" min="1" max="9999" placeholder="введите площадь">
             </div>
             <div class="form-group form-group-phone">
               <label for="callback-form-phone" class="label">телефон</label>
-              <input type="text" name="type" id="callback-form-phone" class="input-field" required placeholder="+7 (999) 999-99-99">
+              <input type="text" name="phone" id="callback-form-phone" class="input-field js-input-phone-mask" required placeholder="+7 (999) 999-99-99">
             </div>
             <button type="button" id="cbf-submit-btn" class="submit-btn">Оставить заявку</button>
           </div>

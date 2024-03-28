@@ -1,156 +1,207 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!--#include virtual="/parts/header.html" -->
 
-<head>
-  <meta charset="utf-8">
-  <title>Чистый дом</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any">
-  <link rel="stylesheet" href="css/app.min.css">
-</head>
-
-<body>
-
-  <header class="header hidden-mobile">
-
-  </header>
-
-  <div class="main-section">
-
-  </div>
-
-  <div id="rooms" class="rooms-section section">
-
-  </div>
-
-  <div id="about" class="about-section">
-
-  </div>
-
-  <div class="advantages-section section">
-
-  </div>
-
-  <div class="near-section section">
-
-  </div>
-
-  <div id="contacts" class="contacts-section section">
-
-  </div>
-
-  <div class="testimonials-section section">
-
-  </div>
-
-  <footer class="footer section">
-
-  </footer>
-
-  <!-- mobile menu -->
-  <div class="burger-menu-wrapper hidden-desktop">
-    <div class="burger-menu">
-      <span></span>
-    </div>
-  </div>
-  <div class="mobile-menu hidden-desktop">
-    <div class="logo">
-      <img src="images/mobile-dark-logo.png" alt="">
-    </div>
-    <div class="address">г. Миасс, <br class="address-br">улица Богдана Хмельницкого 86</div>
-    <ul class="menu">
-      <li class="menu-item">
-        <a href="#about">О гостинице</a>
-      </li>
-      <li class="menu-item">
-        <a href="#rooms">Номера</a>
-      </li>
-      <li class="menu-item">
-        <a href="#contacts">Контакты</a>
-      </li>
-    </ul>
-    <div class="phone">
-      <a href="tel:+78002507505" class="phone-link">8 800 250 75 05</a>
-      <span class="phone-text"> — бронирование</span>
-    </div>
-    <div class="phone last-contacts-item">
-      <a href="tel:+79617964972" class="phone-link">+7 (961) 796 49 72</a>
-      <span class="phone-text"> — администратор</span>
-    </div>
-    <div class="social-icons">
-      <a href="viber://chat?number=%2B79617964972" class="social-icon-link" target="_blank">
-        <img src="images/viber-icon.png" class="social-icon-image" alt="">
-      </a>
-      <a href="https://wa.me/79617964972" class="social-icon-link" target="_blank">
-        <img src="images/whatsapp-icon.png" class="social-icon-image" alt="">
-      </a>
-    </div>
-    <button class="mobile-menu-callback-btn callback-btn">Перезвоните мне</button>
-  </div>
-  
-  <!-- feedback-modal -->
-  <div id="callback-modal" class="modal-window callback-modal">
-    <div class="modal-wrapper">
-      <div class="modal-area">
-        <div class="modal-close">
-          <div class="close"></div>
-        </div>
-        <div class="modal-title">Заполните форму</div>
-        <form id="callback-modal-form" class="form" method="post">
-          <label for="callback-name" class="label">Ваше имя</label>
-          <input type="text" id="callback-name" class="name input-field first-input-field" name="name" minlength="3" maxlength="20" required>
-          <label for="callback-phone" class="label">Ваш телефон</label>
-          <input type="text" id="callback-phone" class="phone input-field" name="phone" required minlength="3" maxlength="30">
-          <input type="hidden" id="modal-start-date" name="start-date" value="">
-          <input type="hidden" id="modal-guest" name="guest" value="">
-          <input type="checkbox" name="checkbox" class="custom-checkbox" id="checkbox-callback-modal" checked required onchange="document.querySelector('.js-callback-modal-btn').disabled = !this.checked;">
-          <label for="checkbox-callback-modal" class="custom-checkbox-label"></label>
-          <span class="checkbox-text">
-            Согласен с <span class="privacy-policy-btn" target="_blank">политикой обработки персональных данных</span></span>
-          <input type="button" class="submit-btn js-callback-modal-btn" value="Отправить">
-        </form>
+<div class="main-section section">
+  <div class="container">
+    <div class="section-title">Послестроительная уборка</div>
+    <div class="main-section-subtitle">Термогидронический метод методом очистки <br>Избавим от загрязнений любой сложности с гарантией результата</div>
+    <div class="main-image-wrapper">
+      <div class="main-image">
+        <img src="/images/poslestroitelnaya-uborka/poslestroitelnaya-uborka-main-bg.jpg" alt="">
       </div>
+      <button class="callback-btn main-btn">Попробовать бесплатно</button>
     </div>
-  </div>
+  </div> 
+</div>
 
-  <!-- privacy-policy-modal -->
-  <div id="privacy-policy-modal" class="modal-window privacy-policy-modal">
-    <div class="modal-wrapper">
-      <div class="modal-area">
-        <div class="modal-close">
-          <div class="close"></div>
+<div id="services-section" class="services-section section">
+  <div class="container">
+    <div class="above-title">услуги</div>
+    <div class="section-title"><span class="bluecolor">Эффективная <br></span>уборка офиса</div>
+    <div class="services">
+      <div class="item">
+        <div class="horizontal-line"></div>
+        <div class="flex-container">
+          <div class="title">Генеральная уборка под ключ</div>
+          <div class="list">
+            <div class="list-item">- мытье окон и подоконников</div>
+            <div class="list-item">- мытье полов и бетона</div>
+            <div class="list-item">- удаление грязи и пыли со всех поверхностей</div>
+            <div class="list-item list-item-last">- влажная и сухая уборка напольных покрытий</div>
+          </div>
+          <div class="price">от 300 ₽ м<sup class="sup">2</sup></div>
         </div>
-        <div class="modal-title">Политика конфиденциальности</div>
-        <div class="modal-content">
-          <p>Комментарии</p>
-          <p>Если посетитель оставляет комментарий на сайте, мы собираем данные указанные в форме комментария, а также IP адрес посетителя и данные user-agent браузера с целью определения спама.</p>
-          <p>Анонимизированная строка создаваемая из вашего адреса email ("хеш") может предоставляться сервису Gravatar, чтобы определить используете ли вы его. Политика конфиденциальности Gravatar доступна здесь: https://automattic.com/privacy/ . После одобрения комментария ваше изображение профиля будет видимым публично в контексте вашего комментария.</p>
-          <p>Медиафайлы</p>
-          <p>Если вы зарегистрированный пользователь и загружаете фотографии на сайт, вам возможно следует избегать загрузки изображений с метаданными EXIF, так как они могут содержать данные вашего месторасположения по GPS. Посетители могут извлечь эту информацию скачав изображения с сайта.</p>
-          <p>Куки</p>
-          <p>Если вы оставляете комментарий на нашем сайте, вы можете включить сохранение вашего имени, адреса email и вебсайта в куки. Это делается для вашего удобства, чтобы не заполнять данные снова при повторном комментировании. Эти куки хранятся в течение одного года.</p>
-          <p>Если у вас есть учетная запись на сайте и вы войдете в неѐ, мы установим временный куки для определения поддержки куки вашим браузером, куки не содержит никакой личной информации и удаляется при закрытии вашего браузера.</p>
-          <p>При входе в учетную запись мы также устанавливаем несколько куки с данными входа и настройками экрана. Куки входа хранятся в течение двух дней, куки с настройками экрана - год. Если вы выберете возможность "Запомнить меня", данные о входе будут сохраняться в течение двух недель. При выходе из учетной записи куки входа будут удалены.</p>
-          <p>При редактировании или публикации статьи в браузере будет сохранен дополнительный куки, он не содержит персональных данных и содержит только ID записи отредактированной вами, истекает через 1 день.</p>
-          <p>Встраиваемое содержимое других вебсайтов</p>
-          <p>Статьи на этом сайте могут включать встраиваемое содержимое (например видео, изображения, статьи и др.), подобное содержимое ведет себя так же, как если бы посетитель зашел на другой сайт.</p>
-          <p>Эти сайты могут собирать данные о вас, использовать куки, внедрять дополнительное отслеживание третьей стороной и следить за вашим взаимодействием с внедренным содержимым, включая отслеживание взаимодействия, если у вас есть учетная запись и вы авторизовались на том сайте.</p>
-          <p>С кем мы делимся вашими данными</p>
-          <p>Если вы запросите сброс пароля, ваш IP будет указан в email-сообщении о сбросе.
-          <p>Как долго мы храним ваши данные</p>
-          <p>Если вы оставляете комментарий, то сам комментарий и его метаданные сохраняются неопределенно долго. Это делается для того, чтобы определять и одобрять последующие комментарии автоматически, вместо помещения их в очередь на одобрение.</p>
-          <p>Для пользователей с регистрацией на нашем сайте мы храним ту личную информацию, которую они указывают в своем профиле. Все пользователи могут видеть, редактировать или удалить свою информацию из профиля в любое время (кроме имени пользователя). Администрация вебсайта также может видеть и изменять эту информацию.</p>
-          <p>Какие у вас права на ваши данные</p>
-          <p>При наличии учетной записи на сайте или если вы оставляли комментарии, то вы можете запросить файл экспорта персональных данных, которые мы сохранили о вас, включая предоставленные вами данные. Вы также можете запросить удаление этих данных, это не включает данные, которые мы обязаны хранить в административных целях, по закону или целях безопасности.</p>
-          <p>Куда мы отправляем ваши данные</p>
-          <p>Комментарии пользователей могут проверяться автоматическим сервисом определения спама</p>
+        <div class="details js-details-btn">
+          <div class="details-text">подробнее</div>
+          <img src="/images/arrow-top-right.svg" class="details-image" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="horizontal-line"></div>
+        <div class="flex-container">
+          <div class="title">Ежедневная уборка офиса Комплекс А</div>
+          <div class="list">
+            <div class="list-item">- мытье окон и подоконников</div>
+            <div class="list-item">- мытье полов и бетона</div>
+            <div class="list-item">- удаление грязи и пыли со всех поверхностей</div>
+            <div class="list-item list-item-last">- влажная и сухая уборка напольных покрытий</div>
+          </div>
+          <div class="price">от 300 ₽ м<sup class="sup">2</sup></div>
+        </div>
+        <div class="details js-details-btn">
+          <div class="details-text">подробнее</div>
+          <img src="/images/arrow-top-right.svg" class="details-image" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="horizontal-line"></div>
+        <div class="flex-container">
+          <div class="title">Регулярная уборка Комплекс Б</div>
+          <div class="list">
+            <div class="list-item">- мытье окон и подоконников</div>
+            <div class="list-item">- мытье полов и бетона</div>
+            <div class="list-item">- удаление грязи и пыли со всех поверхностей</div>
+            <div class="list-item list-item-last">- влажная и сухая уборка напольных покрытий</div>
+          </div>
+          <div class="price">от 300 ₽ м<sup class="sup">2</sup></div>
+        </div>
+        <div class="details js-details-btn">
+          <div class="details-text">подробнее</div>
+          <img src="/images/arrow-top-right.svg" class="details-image" alt="">
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="js/app.min.js"></script>
+<div id="callback-form-section" class="callback-form-section section">
+  <div class="container">
+    <div class="callback-form">
+      <div class="callback-form__title">Готовы оставить заявку?</div>
+      <div class="discount-text">Мы даём скидку 10% на первый заказ</div>
+      <form class="form">
+        <div class="flex-container">
+          <div class="form-group form-group-type">
+            <label for="callback-form-type" class="label">тип уборки</label>
+            <input type="text" name="type" id="callback-form-type" class="input-field input-type" required placeholder="генеральная уборка офиса Комплекс А">
+          </div>
+          <div class="form-group form-group-area">
+            <label for="callback-form-area" class="label">площадь помещения</label>
+            <input type="number" name="area" id="callback-form-area" class="input-field" min="1" max="9999" placeholder="введите площадь">
+          </div>
+          <div class="form-group form-group-phone">
+            <label for="callback-form-phone" class="label">телефон</label>
+            <input type="text" name="phone" id="callback-form-phone" class="input-field js-input-phone-mask" required placeholder="+7 (999) 999-99-99">
+          </div>
+          <button type="button" id="cbf-submit-btn" class="submit-btn">Оставить заявку</button>
+        </div>
+        <div class="agreement-text">
+          <input type="checkbox" name="checkbox" id="cbf-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#cbf-submit-btn').disabled = !this.checked;">
+          <label for="cbf-feedback-checkbox" class="custom-checkbox-label"></label>
+          <span class="custom-checkbox-text">Согласен с политикой обработки
+            <span class="custom-checkbox-link privacy-policy-btn"> персональных данных</span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-</body>
-</html>
+<div class="about-section section">
+  <div class="container">
+    <div class="section-title">Наши преимущества</div>
+    <div class="advantages advantages-title-only">
+      <div class="advantages-row">
+        <div class="item">
+          <div class="title">Фиксированная цена</div>
+        </div>
+        <div class="item">
+          <div class="title">Опытный персонал</div>
+        </div>
+      </div>
+      <div class="advantages-row">
+        <div class="item">
+          <div class="title">Cохранность имущества</div>
+        </div>
+        <div class="item">
+          <div class="title">Профессиональное оборудование</div>
+        </div>
+      </div>
+      <div class="advantages-row advantages-big-row">
+        <div class="left-items">
+          <div class="item">
+            <div class="title">Безопасные и гипоаллергенные средства</div>
+          </div>
+          <div class="item">
+            <div class="title">Работа по договору</div>
+          </div>
+          <div class="item">
+            <div class="title">Личный менеджер</div>
+          </div>
+        </div>
+        <div class="right-form">
+          <div class="right-form__title">Не верите, напишите нам сейчас и мы сделаем вам бесплатную чистку помещения 10м<sup class="sup">2</sup></div>
+          <form class="form">
+            <div class="form-group form-group-first">
+              <input type="text" name="name" class="input-field" placeholder="Введите ваше имя" required>
+              <input type="text" name="phone" class="input-field js-input-phone-mask" placeholder="Введите ваш номер телефона" required>
+            </div>
+            <div class="form-group form-group-second">
+              <input type="email" name="email" class="input-field" placeholder="Введите ваше email" required>
+              <input type="number" name="area" class="input-field" min="1" max="9999" placeholder="Площадь помещения" required>
+            </div>
+            <button type="button" id="arf-submit-btn" class="submit-btn">Попробовать бесплатно</button>
+            <div class="agreement-text">
+              <input type="checkbox" name="checkbox" id="arf-feedback-checkbox" class="custom-checkbox js-required-checkbox" checked required onchange="document.querySelector('#arf-submit-btn').disabled = !this.checked;">
+              <label for="arf-feedback-checkbox" class="custom-checkbox-label"></label>
+              <span class="custom-checkbox-text">Согласен с политикой обработки
+                <span class="custom-checkbox-link privacy-policy-btn"> персональных данных</span>
+              </span>
+            </div>              
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="photo-section section">
+  <div class="container">
+    <div class="section-title">Процесс работ</div>
+    <div class="photos">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo4.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo5.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item">
+            <img src="/images/uborka-kvartiry/photo6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

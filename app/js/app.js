@@ -1,13 +1,12 @@
 import Swiper, { Navigation } from 'swiper';
 // import AirDatepicker from 'air-datepicker';
 // import PhotoSwipeLightbox from 'photoswipe/lightbox';
-// import IMask from 'imask';
+import IMask from 'imask';
 
 import ImageCompare from "image-compare-viewer";
 
 
 const body = document.querySelector('body');
-
 
 
 // Image compare
@@ -18,8 +17,6 @@ const viewers = document.querySelectorAll(".image-compare");
 viewers.forEach((element) => {
   let view = new ImageCompare(element).mount();
 });
-
-
 
 
 // Footer year
@@ -121,6 +118,7 @@ function mobileMenuToggle() {
   body.classList.toggle('overflow-hidden');
   mobileMenu.classList.toggle('active');
   mobileMenuBackground.classList.toggle('active');
+  burgerMenuWrapper.classList.toggle('menu-is-open');
 }
 
 menuClose.onclick = mobileMenuToggle;
@@ -140,15 +138,14 @@ for (let i = 0; i < listClick.length; i++) {
 
 
 // Окна
-// const callbackBtn = document.querySelectorAll('.js-callback-btn');
-// const mobileMenuCallbackBtn = document.querySelector('.mobile-menu-callback-btn');
-// const callbackModal = document.querySelector('#callback-modal');
-
-
 const detailsBtns = document.querySelectorAll('.js-details-btn');
 const detailsModal = document.querySelectorAll('.details-modal');
 const privacyPolicyBtns = document.querySelectorAll('.privacy-policy-btn');
 const privacyPolicyModal = document.querySelector('#privacy-policy-modal');
+const paymentBtn = document.querySelector('#payment-btn');
+const paymentModal = document.querySelector('#payment-modal');
+const partnershipBtn = document.querySelector('#partnership-btn');
+const partnershipModal = document.querySelector('#partnership-modal');
 const modalWindow = document.querySelectorAll('.modal-window');
 const modalCloseBtns = document.querySelectorAll('.modal-window .modal-close');
 
@@ -178,10 +175,15 @@ for (let i = 0; i < privacyPolicyBtns.length; i++) {
   }
 }
 
-// mobileMenuCallbackBtn.onclick = function() {
-//   closeMenu();
-//   modalOpen(callbackModal);
-// }
+// Открытие окна Оплата
+paymentBtn.onclick = function() {
+  modalOpen(paymentModal);
+}
+
+// Открытие окна Партнерство
+partnershipBtn.onclick = function() {
+  modalOpen(partnershipModal);
+}
 
 // Закрытие окон
 for (let i = 0; i < modalCloseBtns.length; i++) {
@@ -190,6 +192,7 @@ for (let i = 0; i < modalCloseBtns.length; i++) {
   }
 }
 
+// Закрытие окон при клике за его пределами
 for (let i = 0; i < modalWindow.length; i++) {
   modalWindow[i].onclick = function(event) {
     let classList = event.target.classList;
@@ -202,3 +205,68 @@ for (let i = 0; i < modalWindow.length; i++) {
 }
 
 
+// Загрузить еще в секции Видео
+const videoSection = document.querySelector('.video-section');
+
+if (videoSection) {
+  const viewMoreBtn = document.querySelector('.video-section .view-more-btn');
+  const videoItem = document.querySelectorAll('.video-section .item');
+
+  viewMoreBtn.onclick = function() {
+    viewMoreBtn.classList.add('hidden');
+
+    videoItem.forEach((item) => {
+      item.classList.remove('hidden');
+    });
+  }
+  
+}
+
+
+// Смотреть все работы в секции Наши работы
+const portfolioSection = document.querySelector('.portfolio-section');
+
+if (portfolioSection) {
+  const seeAllBtn = document.querySelector('.portfolio-section .see-all-btn');
+  const portfolioItem = document.querySelectorAll('.portfolio-section .item');
+
+  if (seeAllBtn) {
+    seeAllBtn.onclick = function() {
+      seeAllBtn.classList.add('hidden');
+
+      portfolioItem.forEach((item) => {
+        item.classList.remove('hidden');
+      });
+    }
+  }  
+}
+
+
+// Input phone mask
+function inputPhoneMask() {
+  const elementPhone = document.querySelectorAll('.js-input-phone-mask');
+
+  const maskOptionsPhone = {
+    mask: '+{7} (000) 000 00 00'
+  };
+
+  elementPhone.forEach((item) => {
+    const mask = IMask(item, maskOptionsPhone);
+  });
+}
+
+inputPhoneMask();
+
+
+// Что входит в уборку
+const whatIsIncludedSection = document.querySelector('.what-is-included-section');
+
+if (whatIsIncludedSection) {
+  const pluses = document.querySelectorAll('.details .item .plus');
+
+  pluses.forEach((item) => {
+    item.onclick = function() {
+      item.parentElement.classList.toggle('active');
+    } 
+  });
+}
